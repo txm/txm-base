@@ -1,0 +1,39 @@
+{
+  "name": "@txm/txm-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "commit": "commit-wizard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/txm/txm-base.git"
+  },
+  "author": "Andrew McGregor <andy@txm.net> (http://www.txm.net)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/txm/txm-base/issues"
+  },
+  "homepage": "https://github.com/txm/txm-base#readme",
+  "devDependencies": {
+    "@txm/devserver": "^1.0.0",
+    "chai": "^3.4.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "jshint": "^2.8.0",
+    "mocha": "^2.3.4",
+    "pre-git": "^1.3.1"
+  },
+  "config": {
+    "pre-git": {
+      "commit-msg": "validate-commit-msg",
+      "pre-commit": [],
+      "pre-push": [],
+      "post-commit": [],
+      "post-merge": []
+    }
+  }
+}
